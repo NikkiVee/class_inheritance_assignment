@@ -101,7 +101,7 @@ class Atom extends Molecule {
   }
 
   tellStory() {
-    console.log(``);
+    return `This is a story of a ${this.electricCharge} atom. It lives in heart made up of ${this.fatCells} cells inside of ${this.personName}. ${this.personName} belongs to the ${this.familyName} family in the village of ${this.villageName}. The village of ${this.villageName} is in the ${this.landClimate} on the continent of ${this.continentName}. The continent of ${this.continentName} is on a ${this.galaxyType} planet orbiting a star called ${this.starName} that's 3 billion years old. The ${this.starName} star is part of the ${this.galaxyName} in ${this.universeName} Universe.`;
   }
 }
 
@@ -129,6 +129,6 @@ let myCell = new Cell('50 billion', '2 billion', myOrgan, myPerson, myFamily, my
 
 let myMolecule = new Molecule('macaroni', 'walnut', myCell, myOrgan, myPerson, myFamily, myVillage, myLand, myContinent, myPlanet, myStar, myGalaxy, myUniverse);
 
-let myAtom = new Atom('none', '62 pm', myMolecule, myCell, myOrgan, myPerson, myFamily, myVillage, myLand, myContinent, myPlanet, myStar, myGalaxy, myUniverse);
+let myAtom = new Atom('negative', '62 pm', myMolecule, myCell, myOrgan, myPerson, myFamily, myVillage, myLand, myContinent, myPlanet, myStar, myGalaxy, myUniverse);
 
-console.log(myAtom.tellStory);
+console.log(myAtom.tellStory());
